@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?><xml>
+  <node>
+    <nid>2</nid>
+    <title>Università degli Studi Roma Tre</title>
+    <body></body>
+    <field_partner_logo_fid>http://localhost:8888/youthagora/templates/master/sites/default/files/Logo_Roma_Tre.jpeg</field_partner_logo_fid>
+    <field_partner_address_value>Via Ostiense, 159, 00154 Rome, Italy</field_partner_address_value>
+    <field_partner_city_value>Rome</field_partner_city_value>
+    <field_partner_country_value>Italy</field_partner_country_value>
+    <field_partner_location_openlayers_wkt>GEOMETRYCOLLECTION(POINT(12.4789832 41.8627962))</field_partner_location_openlayers_wkt>
+    <field_partner_order_value>2</field_partner_order_value>
+    <field_partner_website_url>http://www.uniroma3.it/</field_partner_website_url>
+  </node>
+  <node>
+    <nid>3</nid>
+    <title>Université Pierre et Marie CURIE</title>
+    <body></body>
+    <field_partner_logo_fid>http://localhost:8888/youthagora/templates/master/sites/default/files/LogoUPMC-1.png</field_partner_logo_fid>
+    <field_partner_address_value>4 Rue Jussieu, 75005 Paris, France</field_partner_address_value>
+    <field_partner_city_value>Paris</field_partner_city_value>
+    <field_partner_country_value>France</field_partner_country_value>
+    <field_partner_location_openlayers_wkt>GEOMETRYCOLLECTION(POINT(2.354971 48.846548))</field_partner_location_openlayers_wkt>
+    <field_partner_order_value>1</field_partner_order_value>
+    <field_partner_website_url>http://www.upmc.fr/</field_partner_website_url>
+  </node>
+  <node>
+    <nid>4</nid>
+    <title>Uppsala University</title>
+    <body></body>
+    <field_partner_logo_fid>http://localhost:8888/youthagora/templates/master/sites/default/files/628px-Uppsala_University_logo.svg_.png</field_partner_logo_fid>
+    <field_partner_address_value>Uppsalagatan 05, 252 50 Helsingborg Municipality, Sweden</field_partner_address_value>
+    <field_partner_city_value>Helsingborg Municipality</field_partner_city_value>
+    <field_partner_country_value>Sweden</field_partner_country_value>
+    <field_partner_location_openlayers_wkt>GEOMETRYCOLLECTION(POINT(12.7205042 56.0403812))</field_partner_location_openlayers_wkt>
+    <field_partner_order_value>3</field_partner_order_value>
+    <field_partner_website_url>http://www.uu.se</field_partner_website_url>
+  </node>
+</xml>
