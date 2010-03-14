@@ -35,3 +35,12 @@ function ec_partners_node_info() {
   $args = func_get_args();
   return call_user_func_array('_ec_partners_node_info', $args);
 }
+
+/**
+ * Implementation of hook_strongarm().
+ */
+function ec_partners_strongarm() {
+  module_load_include('inc', 'ec_partners', 'ec_partners.defaults');
+  $args = func_get_args();
+  return call_user_func_array('_ec_partners_strongarm', $args);
+}

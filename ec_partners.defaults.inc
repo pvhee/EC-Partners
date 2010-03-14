@@ -637,6 +637,9 @@ function _ec_partners_ctools_plugin_api() {
   if ($module == "feeds" && $api == "feeds_importer_default") {
     return array("version" => 1);
   }
+  else if ($module == "system" && $api == "strongarm") {
+    return array("version" => 1);
+  }
 }
 
 /**
@@ -745,5 +748,58 @@ function _ec_partners_feeds_importer_default() {
   );
 
   $export['partner'] = $feeds_importer;
+  return $export;
+}
+
+/**
+ * Helper to implementation of hook_strongarm().
+ */
+function _ec_partners_strongarm() {
+  $export = array();
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_partner';
+  $strongarm->value = '0';
+
+  $export['comment_partner'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_partner_feed';
+  $strongarm->value = '0';
+
+  $export['comment_partner_feed'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_options_partner';
+  $strongarm->value = array(
+    '0' => 'status',
+    '1' => 'promote',
+  );
+
+  $export['node_options_partner'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_options_partner_feed';
+  $strongarm->value = array();
+
+  $export['node_options_partner_feed'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_partner_feed_pattern';
+  $strongarm->value = 'partner-feed/[nid]';
+
+  $export['pathauto_node_partner_feed_pattern'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_partner_pattern';
+  $strongarm->value = 'partner/[nid]';
+
+  $export['pathauto_node_partner_pattern'] = $strongarm;
   return $export;
 }
