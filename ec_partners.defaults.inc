@@ -773,6 +773,29 @@ function _ec_partners_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'content_complete_fields_partner';
+  $strongarm->value = array(
+    '0' => 'title',
+    '1' => 'body',
+    '2' => 'field_partner_logo',
+    '3' => 'field_partner_location',
+    '4' => 'field_partner_address',
+    '5' => 'field_partner_city',
+    '6' => 'field_partner_country',
+    '7' => 'field_partner_website',
+  );
+
+  $export['content_complete_fields_partner'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_complete_partner';
+  $strongarm->value = '1';
+
+  $export['content_complete_partner'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_partner';
   $strongarm->value = array(
     '0' => 'status',
